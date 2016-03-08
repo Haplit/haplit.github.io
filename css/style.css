@@ -9,7 +9,7 @@ body {
     height: 100%;
     font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #fff;
-    background-color: #000;
+    background-color: #FFF;
 }
 
 .blue {
@@ -750,6 +750,7 @@ i.metric-icon {
 }
 
 #footer p {
+	color: #777;
     font-size: 16px;
 }
 
