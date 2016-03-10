@@ -748,6 +748,7 @@ i.metric-icon {
 }
 
 #contact .contact-form p {
+    color: #777;
     font-size: 16px;
     margin: 0;
 }
