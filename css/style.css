@@ -444,7 +444,8 @@ body {
 
 #solution {
     padding-top: 10px;
-    background-color: #eeeeee;
+    background-color: #eee;
+    color: #777;
 }
 
 #solution .solution-overview {
@@ -454,7 +455,7 @@ body {
 }
 
 #solution .second-half-solution {
-    background-color: black;
+    background-color: #eee;
     padding-top: 30px;
 }
 
