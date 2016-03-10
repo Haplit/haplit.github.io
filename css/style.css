@@ -361,6 +361,11 @@ body {
 
 #contact {}
 
+.small-padding {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .center {
     text-align: center;
 }
@@ -719,11 +724,17 @@ i.metric-icon {
     font-size: 22px;
 }
 
-#contact img {
+#contact .right-side 
+{
+    width: 25%;
     float: right;
-    margin: 5px 8px;
-    width: 30%;
+}
+
+#contact img {
+    width: 100%;
+    max-width: 90px;
     height: auto;
+    max-height: 100%;
     border: 1px solid #AAA;
 }
 
@@ -732,16 +743,8 @@ i.metric-icon {
     font-size: 16px;
 }
 
-#contact .philip {
-    border: 6px solid #009CB2;
-}
-
-#contact .megan {
-    border: 6px solid #FF9F00;
-}
-
-#contact .chandler {
-    border: 6px solid #9FD367;
+#contact .contact-color {
+    border: 2px solid #009CB2;
 }
 
 #contact .contact-form p {

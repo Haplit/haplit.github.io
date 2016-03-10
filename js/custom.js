@@ -35,49 +35,94 @@ $(function() {
         'last_name': 'Bale',
         'title': '',
         'position': 'Computer Science',
-        'status': 'undergraduate',
-        'institution': 'Georgia Tech'
+        'status': 'major',
+        'institution': 'Georgia Tech',
+        'image_path': ''
     }, {
         'first_name': 'Chandler',
         'last_name': 'Matz',
         'title': '',
         'position': 'Computer Engineering',
-        'status': 'undergraduate',
-        'institution': 'Georgia Tech'
+        'status': 'major',
+        'institution': 'Georgia Tech',
+        'image_path': ''
     }, {
         'first_name': 'Will',
         'last_name': 'Flournoy',
         'title': '',
         'position': 'Environmental Engineering',
-        'status': 'undergraduate',
-        'institution': 'Georgia Tech'
+        'status': 'major',
+        'institution': 'Georgia Tech',
+        'image_path': ''
     }, {
         'first_name': 'Ryan',
         'last_name': 'Quinn',
         'title': '',
         'position': 'Aerospace Engineering',
-        'status': 'doctorate',
-        'institution': 'Georgia Tech'
+        'status': 'intern',
+        'institution': 'SpaceX',
+        'image_path': ''
     }, {
         'first_name': 'Alex',
         'last_name': 'Ferrara',
         'title': '',
         'position': 'Computer Engineering',
-        'status': 'undergraduate',
-        'institution': 'Georgia Tech'
+        'status': 'major',
+        'institution': 'Georgia Tech',
+        'image_path': ''
     }, {
         'first_name': 'Logan',
         'last_name': 'Lott',
         'title': '',
         'position': 'Mechanical Engineering',
-        'status': 'undergraduate',
-        'institution': 'Georgia Tech'
+        'status': 'major',
+        'institution': 'Georgia Tech',
+        'image_path': ''
     }, {
         'first_name': 'Zak',
-        'last_name': 'Campuazano',
+        'last_name': 'Campuzano',
         'title': '',
         'position': 'Mechanical Engineering',
-        'status': 'undergraduate',
-        'institution': 'Georgia Tech'
+        'status': 'major',
+        'institution': 'Georgia Tech',
+        'image_path': ''
     }];
+
+    for(var i = 0; i < team.length; i++)
+    {
+        var member = team[i];
+        // var block = '<li class="' + inversion + '"> ' +
+        // '<div class="timeline-badge info"><img src="img/experience/' + position['icon'] + '" class="img-circle position-icon" /></div> ' +
+        //     '<div class="timeline-panel"> ' +
+        //       '<div class="timeline-heading"> ' +
+        //         '<h4 class="timeline-title">' + position['title'] + '</h4> ' +
+        //         '<p style="float: right"><small class="text-muted">' + position['location'] + '</small></p>' + 
+        //         '<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> ' + position['start'] + ' to ' + position['end'] + '</small></p> ' +
+        //       '</div> ' +
+        //       '<div class="timeline-body"> ' +
+        //         '<p>' + position['description'] + '</p> ' +
+        //       '</div> ' +
+        //     '</div> ' +
+        //   '</li>';
+
+
+        var block = '<div class="col-sm-4 col-md-3 small-padding">' + 
+                        '<div class="thumbnail contact-color">' +
+                            '<div class="right-side">' +
+                                '<img class="img-circle img-rounded" src="img/team/' + member['first_name'].toLowerCase() + '.jpg" />' +
+                            '</div>'+
+                            '<div class="caption">' +
+                                '<h3 class="mb15 mt5">' +
+                                    member['first_name'] + ' ' + member['last_name'][0] + '.' +
+                                '</h3>' +
+                                '<p class="mb15">'+
+                                    member['first_name'] + ' is currently a ' + member['position'].toLowerCase() + ' ' + member['status'] + ' at ' + member['institution'] + '.' +
+                                '</p>' +
+                            '</div>' + 
+                        '</div>' + 
+                    '</div>';
+
+
+        $(".team").append(block);
+    }
 });
